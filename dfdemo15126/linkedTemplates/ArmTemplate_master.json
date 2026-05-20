@@ -11,7 +11,31 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"SinkLinked_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SinkLinked'"
+		},
+		"SourceLinked_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'SourceLinked'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://storagebrowsejobss.dfs.core.windows.net/"
+		},
+		"SinkLinked_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobss.database.windows.net"
+		},
+		"SinkLinked_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db19126"
+		},
+		"SinkLinked_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin19126"
+		},
+		"SourceLinked_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storagebrowsejobss.dfs.core.windows.net/"
 		},
@@ -45,8 +69,26 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"SinkLinked_password": {
+						"value": "[parameters('SinkLinked_password')]"
+					},
+					"SourceLinked_accountKey": {
+						"value": "[parameters('SourceLinked_accountKey')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"SinkLinked_properties_typeProperties_server": {
+						"value": "[parameters('SinkLinked_properties_typeProperties_server')]"
+					},
+					"SinkLinked_properties_typeProperties_database": {
+						"value": "[parameters('SinkLinked_properties_typeProperties_database')]"
+					},
+					"SinkLinked_properties_typeProperties_userName": {
+						"value": "[parameters('SinkLinked_properties_typeProperties_userName')]"
+					},
+					"SourceLinked_properties_typeProperties_url": {
+						"value": "[parameters('SourceLinked_properties_typeProperties_url')]"
 					}
 				}
 			},
