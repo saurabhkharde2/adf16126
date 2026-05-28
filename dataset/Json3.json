@@ -1,0 +1,58 @@
+{
+	"name": "Json3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage6",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "targetcont16126"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Index": {
+					"type": "string"
+				},
+				"Customer Id": {
+					"type": "string"
+				},
+				"First Name": {
+					"type": "string"
+				},
+				"Last Name": {
+					"type": "string"
+				},
+				"Company": {
+					"type": "string"
+				},
+				"City": {
+					"type": "string"
+				},
+				"Country": {
+					"type": "string"
+				},
+				"Phone 1": {
+					"type": "string"
+				},
+				"Phone 2": {
+					"type": "string"
+				},
+				"Email": {
+					"type": "string"
+				},
+				"Subscription Date": {
+					"type": "string"
+				},
+				"Website": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
